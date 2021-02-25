@@ -18,6 +18,39 @@
 	ga('create', '263440586', 'auto');
 	ga('send', 'pageview');
 </script>
+
+<script>
+	ga(function(){
+	  ga_trackers=[];
+	  ga.getAll().forEach(function(x,i){
+	  ga_trackers.push(x.get('name'))});
+	  ga_trackers.forEach(
+	  function(gaName){
+		ga(gaName + '.require', 'Clearbit', {"mapping":{
+		  "type":"dimension1",
+		  "companyName":"dimension2", 
+		  "companyDomain":"dimension3",
+		  "companyType":"dimension4",
+		  "companySector":"dimension5",
+		  "companyIndustryGroup":"dimension6",
+		  "companyIndustry":"dimension7", 
+		  "companySubIndustry":"dimension8", 
+		  "companySicCode":"dimension9",
+		  "companyNaicsCode":"dimension10",
+		  "companyCountry":"dimension11",
+		  "companyState":"dimension12",
+		  "companyCity":"dimension13",
+		  "companyFunding":"dimension14",
+		  "companyEstimatedAnnualRevenue":"dimension15", 
+		  "companyEmployeesRange":"dimension16",
+		  "companyEmployees":"dimension17", 
+		  "companyAlexaRank":"dimension18"}
+		});
+	  });
+	});
+	</script>
+	<script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_4d3936f3768af1fa194191904dad3f61">
+	</script>
 	
 		<title>Jeremy Rogel's Portfolio</title>
 		<meta charset="utf-8" />
