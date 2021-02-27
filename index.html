@@ -27,24 +27,19 @@
 	  ga_trackers.forEach(
 	  function(gaName){
 		ga(gaName + '.require', 'Clearbit', {"mapping":{
-		  "type":"dimension1",
-		  "companyName":"dimension2", 
-		  "companyDomain":"dimension3",
-		  "companyType":"dimension4",
-		  "companySector":"dimension5",
-		  "companyIndustryGroup":"dimension6",
-		  "companyIndustry":"dimension7", 
-		  "companySubIndustry":"dimension8", 
-		  "companySicCode":"dimension9",
-		  "companyNaicsCode":"dimension10",
-		  "companyCountry":"dimension11",
-		  "companyState":"dimension12",
-		  "companyCity":"dimension13",
-		  "companyFunding":"dimension14",
-		  "companyEstimatedAnnualRevenue":"dimension15", 
-		  "companyEmployeesRange":"dimension16",
-		  "companyEmployees":"dimension17", 
-		  "companyAlexaRank":"dimension18"}
+			"ClearbitCompanyDomain":"Domain",
+			"ClearbitCompanyName":"Company_Name", 
+			"ClearbitEmployeeRange":"Employee_Range",
+			"ClearbitEstimatedRevenueRange":"ERR",
+			"ClearbitGlobalAlexaRange":"GAR",
+			"ClearbitHQCity":"HQ_City",
+			"ClearbitHQState":"HQ_State", 
+			"ClearbitHQCountry":"HQ_Country", 
+			"ClearbitIndustry":"Industry",
+			"ClearbitIPTrafficType":"Traffic_Type",
+			"ClearbitSICCode":"SIC_Code",
+			"ClearbitSubIndustry":"Sub_Industry",
+}
 		});
 	  });
 	});
